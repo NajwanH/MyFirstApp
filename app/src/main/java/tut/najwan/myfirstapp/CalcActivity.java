@@ -33,10 +33,10 @@ public class CalcActivity extends AppCompatActivity {
         }
     }
     private void calculateNum() {
-        resultTextView = (TextView) findViewById(R.id.resultTextView);
-        num1TextView   = (EditText) findViewById(R.id.num1EditText);
-        num2TextView  = (EditText) findViewById(R.id.num2EditText);
-        addBtn = (Button) findViewById(R.id.addButton);
+        resultTextView =  findViewById(R.id.resultTextView);
+        num1TextView   =  findViewById(R.id.num1EditText);
+        num2TextView  =  findViewById(R.id.num2EditText);
+        addBtn =  findViewById(R.id.addButton);
 
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -51,7 +51,7 @@ public class CalcActivity extends AppCompatActivity {
                     }catch (Exception  e) {
                         e.getMessage();
                         Context context = getApplicationContext();
-                        CharSequence text = "Please enter a number";
+                        CharSequence text = "Please enter a number,after change";
                         Toast toast = Toast.makeText(context, text,  Toast.LENGTH_SHORT);
                         toast.show();
                     }
