@@ -19,7 +19,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".CalcActivity" />
-        <activity android:name=".ListActivity"></activity>
     </application>
 
 </manifest>

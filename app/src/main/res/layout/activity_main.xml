@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
         android:layout_marginTop="32dp"
         android:text="@string/hello_world"
         app:layout_constraintEnd_toEndOf="parent"
@@ -24,9 +25,11 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
         android:layout_marginStart="4dp"
-        android:text="Calc. "
+        android:layout_marginLeft="4dp"
+        android:text="@string/btnCalc"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        />
 
     <Button
         android:id="@+id/googleBtn"
@@ -34,21 +37,10 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="100dp"
         android:layout_marginEnd="16dp"
-        android:text="Google Serach"
+        android:layout_marginRight="16dp"
+        android:text="@string/btnGoogle"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <Button
-        android:id="@+id/viewListBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:text="View List"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/googleBtn"
-        app:layout_constraintHorizontal_bias="0.526"
-        app:layout_constraintStart_toEndOf="@+id/calcBtn" />
+        app:layout_constraintEnd_toEndOf="parent"
+         />
 
 </android.support.constraint.ConstraintLayout>

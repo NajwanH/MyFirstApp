@@ -20,11 +20,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        greetingTextView = (TextView) findViewById(R.id.greeting);
+        greetingTextView = findViewById(R.id.greeting);
 
         //Calc. Button
         //Attempt to launch an activity within our own app
-        Button calcBtn = (Button) findViewById(R.id.calcBtn);
+        Button calcBtn =  findViewById(R.id.calcBtn);
         calcBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Google Search Button
         //Attempt to launch activity outside our app: Run Google
-        Button googleBtn = (Button) findViewById(R.id.googleBtn);
+        Button googleBtn =  findViewById(R.id.googleBtn);
         googleBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,16 +51,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //List View Button
-        Button viewListBtn = (Button) findViewById(R.id.viewListBtn);
-        viewListBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent listViewIntent = new Intent(getApplicationContext(),ListActivity.class);
-                listViewIntent.putExtra("ListViewKey","List View Activity Works");
-                startActivity(listViewIntent);
-            }
-        });
+
     }
 
 
